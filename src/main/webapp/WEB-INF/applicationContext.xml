@@ -41,14 +41,14 @@
         <property name="dataSource" ref="dataSource"/>
     </bean>
 
-    <cache:annotation-driven />
-    <bean id="cacheManager" class="org.springframework.cache.guava.GuavaCacheManager">
-        <property name="cacheNames">
-            <set>
-                <value>smsVerifyCodes</value>
-            </set>
-        </property>
-    </bean>
+    <!--<cache:annotation-driven />-->
+    <!--<bean id="cacheManager" class="org.springframework.cache.guava.GuavaCacheManager">-->
+        <!--<property name="cacheNames">-->
+            <!--<set>-->
+                <!--<value>smsVerifyCodes</value>-->
+            <!--</set>-->
+        <!--</property>-->
+    <!--</bean>-->
 
     <bean id="xStreamMarshaller" class="org.springframework.oxm.xstream.XStreamMarshaller">
         <property name="autodetectAnnotations" value="true"></property>
